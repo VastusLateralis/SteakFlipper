@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A395A502211A45340071F818 /* Prosjektbeskrivelse.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A395A501211A45340071F818 /* Prosjektbeskrivelse.rtf */; };
 		A3F32C78211A436C00D43E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C77211A436C00D43E4D /* AppDelegate.swift */; };
 		A3F32C7A211A436C00D43E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C79211A436C00D43E4D /* ViewController.swift */; };
 		A3F32C7D211A436C00D43E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F32C7B211A436C00D43E4D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A395A501211A45340071F818 /* Prosjektbeskrivelse.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Prosjektbeskrivelse.rtf; sourceTree = "<group>"; };
 		A3F32C74211A436C00D43E4D /* SteakFlipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteakFlipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F32C77211A436C00D43E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F32C79211A436C00D43E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		A3F32C6B211A436C00D43E4D = {
 			isa = PBXGroup;
 			children = (
+				A395A501211A45340071F818 /* Prosjektbeskrivelse.rtf */,
 				A3F32C76211A436C00D43E4D /* SteakFlipper */,
 				A3F32C8B211A436F00D43E4D /* SteakFlipperTests */,
 				A3F32C96211A436F00D43E4D /* SteakFlipperUITests */,
@@ -231,6 +234,7 @@
 			files = (
 				A3F32C82211A436F00D43E4D /* LaunchScreen.storyboard in Resources */,
 				A3F32C7F211A436F00D43E4D /* Assets.xcassets in Resources */,
+				A395A502211A45340071F818 /* Prosjektbeskrivelse.rtf in Resources */,
 				A3F32C7D211A436C00D43E4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
