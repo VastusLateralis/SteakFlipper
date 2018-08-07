@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3F32C78211A436C00D43E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C77211A436C00D43E4D /* AppDelegate.swift */; };
+		A3F32C7A211A436C00D43E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C79211A436C00D43E4D /* ViewController.swift */; };
+		A3F32C7D211A436C00D43E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F32C7B211A436C00D43E4D /* Main.storyboard */; };
+		A3F32C7F211A436F00D43E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F32C7E211A436F00D43E4D /* Assets.xcassets */; };
+		A3F32C82211A436F00D43E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F32C80211A436F00D43E4D /* LaunchScreen.storyboard */; };
+		A3F32C8D211A436F00D43E4D /* SteakFlipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C8C211A436F00D43E4D /* SteakFlipperTests.swift */; };
+		A3F32C98211A436F00D43E4D /* SteakFlipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C97211A436F00D43E4D /* SteakFlipperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3F32C89211A436F00D43E4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F32C6C211A436C00D43E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3F32C73211A436C00D43E4D;
+			remoteInfo = SteakFlipper;
+		};
+		A3F32C94211A436F00D43E4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F32C6C211A436C00D43E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3F32C73211A436C00D43E4D;
+			remoteInfo = SteakFlipper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3F32C74211A436C00D43E4D /* SteakFlipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteakFlipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F32C77211A436C00D43E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3F32C79211A436C00D43E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3F32C7C211A436C00D43E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3F32C7E211A436F00D43E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3F32C81211A436F00D43E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3F32C83211A436F00D43E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F32C88211A436F00D43E4D /* SteakFlipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteakFlipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F32C8C211A436F00D43E4D /* SteakFlipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteakFlipperTests.swift; sourceTree = "<group>"; };
+		A3F32C8E211A436F00D43E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F32C93211A436F00D43E4D /* SteakFlipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteakFlipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F32C97211A436F00D43E4D /* SteakFlipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteakFlipperUITests.swift; sourceTree = "<group>"; };
+		A3F32C99211A436F00D43E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3F32C71211A436C00D43E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F32C85211A436F00D43E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F32C90211A436F00D43E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3F32C6B211A436C00D43E4D = {
+			isa = PBXGroup;
+			children = (
+				A3F32C76211A436C00D43E4D /* SteakFlipper */,
+				A3F32C8B211A436F00D43E4D /* SteakFlipperTests */,
+				A3F32C96211A436F00D43E4D /* SteakFlipperUITests */,
+				A3F32C75211A436C00D43E4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3F32C75211A436C00D43E4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F32C74211A436C00D43E4D /* SteakFlipper.app */,
+				A3F32C88211A436F00D43E4D /* SteakFlipperTests.xctest */,
+				A3F32C93211A436F00D43E4D /* SteakFlipperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3F32C76211A436C00D43E4D /* SteakFlipper */ = {
+			isa = PBXGroup;
+			children = (
+				A3F32C77211A436C00D43E4D /* AppDelegate.swift */,
+				A3F32C79211A436C00D43E4D /* ViewController.swift */,
+				A3F32C7B211A436C00D43E4D /* Main.storyboard */,
+				A3F32C7E211A436F00D43E4D /* Assets.xcassets */,
+				A3F32C80211A436F00D43E4D /* LaunchScreen.storyboard */,
+				A3F32C83211A436F00D43E4D /* Info.plist */,
+			);
+			path = SteakFlipper;
+			sourceTree = "<group>";
+		};
+		A3F32C8B211A436F00D43E4D /* SteakFlipperTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3F32C8C211A436F00D43E4D /* SteakFlipperTests.swift */,
+				A3F32C8E211A436F00D43E4D /* Info.plist */,
+			);
+			path = SteakFlipperTests;
+			sourceTree = "<group>";
+		};
+		A3F32C96211A436F00D43E4D /* SteakFlipperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3F32C97211A436F00D43E4D /* SteakFlipperUITests.swift */,
+				A3F32C99211A436F00D43E4D /* Info.plist */,
+			);
+			path = SteakFlipperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3F32C73211A436C00D43E4D /* SteakFlipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F32C9C211A436F00D43E4D /* Build configuration list for PBXNativeTarget "SteakFlipper" */;
+			buildPhases = (
+				A3F32C70211A436C00D43E4D /* Sources */,
+				A3F32C71211A436C00D43E4D /* Frameworks */,
+				A3F32C72211A436C00D43E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteakFlipper;
+			productName = SteakFlipper;
+			productReference = A3F32C74211A436C00D43E4D /* SteakFlipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3F32C87211A436F00D43E4D /* SteakFlipperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F32C9F211A436F00D43E4D /* Build configuration list for PBXNativeTarget "SteakFlipperTests" */;
+			buildPhases = (
+				A3F32C84211A436F00D43E4D /* Sources */,
+				A3F32C85211A436F00D43E4D /* Frameworks */,
+				A3F32C86211A436F00D43E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3F32C8A211A436F00D43E4D /* PBXTargetDependency */,
+			);
+			name = SteakFlipperTests;
+			productName = SteakFlipperTests;
+			productReference = A3F32C88211A436F00D43E4D /* SteakFlipperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3F32C92211A436F00D43E4D /* SteakFlipperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F32CA2211A436F00D43E4D /* Build configuration list for PBXNativeTarget "SteakFlipperUITests" */;
+			buildPhases = (
+				A3F32C8F211A436F00D43E4D /* Sources */,
+				A3F32C90211A436F00D43E4D /* Frameworks */,
+				A3F32C91211A436F00D43E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3F32C95211A436F00D43E4D /* PBXTargetDependency */,
+			);
+			name = SteakFlipperUITests;
+			productName = SteakFlipperUITests;
+			productReference = A3F32C93211A436F00D43E4D /* SteakFlipperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3F32C6C211A436C00D43E4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Thomas Johannessen";
+				TargetAttributes = {
+					A3F32C73211A436C00D43E4D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A3F32C87211A436F00D43E4D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A3F32C73211A436C00D43E4D;
+					};
+					A3F32C92211A436F00D43E4D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A3F32C73211A436C00D43E4D;
+					};
+				};
+			};
+			buildConfigurationList = A3F32C6F211A436C00D43E4D /* Build configuration list for PBXProject "SteakFlipper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3F32C6B211A436C00D43E4D;
+			productRefGroup = A3F32C75211A436C00D43E4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3F32C73211A436C00D43E4D /* SteakFlipper */,
+				A3F32C87211A436F00D43E4D /* SteakFlipperTests */,
+				A3F32C92211A436F00D43E4D /* SteakFlipperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3F32C72211A436C00D43E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F32C82211A436F00D43E4D /* LaunchScreen.storyboard in Resources */,
+				A3F32C7F211A436F00D43E4D /* Assets.xcassets in Resources */,
+				A3F32C7D211A436C00D43E4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F32C86211A436F00D43E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F32C91211A436F00D43E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3F32C70211A436C00D43E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F32C7A211A436C00D43E4D /* ViewController.swift in Sources */,
+				A3F32C78211A436C00D43E4D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F32C84211A436F00D43E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F32C8D211A436F00D43E4D /* SteakFlipperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F32C8F211A436F00D43E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F32C98211A436F00D43E4D /* SteakFlipperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3F32C8A211A436F00D43E4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3F32C73211A436C00D43E4D /* SteakFlipper */;
+			targetProxy = A3F32C89211A436F00D43E4D /* PBXContainerItemProxy */;
+		};
+		A3F32C95211A436F00D43E4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3F32C73211A436C00D43E4D /* SteakFlipper */;
+			targetProxy = A3F32C94211A436F00D43E4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3F32C7B211A436C00D43E4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3F32C7C211A436C00D43E4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3F32C80211A436F00D43E4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3F32C81211A436F00D43E4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3F32C9A211A436F00D43E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3F32C9B211A436F00D43E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3F32C9D211A436F00D43E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4S474CCV;
+				INFOPLIST_FILE = SteakFlipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dorkware.SteakFlipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3F32C9E211A436F00D43E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4S474CCV;
+				INFOPLIST_FILE = SteakFlipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dorkware.SteakFlipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3F32CA0211A436F00D43E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4S474CCV;
+				INFOPLIST_FILE = SteakFlipperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dorkware.SteakFlipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteakFlipper.app/SteakFlipper";
+			};
+			name = Debug;
+		};
+		A3F32CA1211A436F00D43E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4S474CCV;
+				INFOPLIST_FILE = SteakFlipperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dorkware.SteakFlipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteakFlipper.app/SteakFlipper";
+			};
+			name = Release;
+		};
+		A3F32CA3211A436F00D43E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4S474CCV;
+				INFOPLIST_FILE = SteakFlipperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dorkware.SteakFlipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SteakFlipper;
+			};
+			name = Debug;
+		};
+		A3F32CA4211A436F00D43E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G4S474CCV;
+				INFOPLIST_FILE = SteakFlipperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dorkware.SteakFlipperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SteakFlipper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3F32C6F211A436C00D43E4D /* Build configuration list for PBXProject "SteakFlipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F32C9A211A436F00D43E4D /* Debug */,
+				A3F32C9B211A436F00D43E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F32C9C211A436F00D43E4D /* Build configuration list for PBXNativeTarget "SteakFlipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F32C9D211A436F00D43E4D /* Debug */,
+				A3F32C9E211A436F00D43E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F32C9F211A436F00D43E4D /* Build configuration list for PBXNativeTarget "SteakFlipperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F32CA0211A436F00D43E4D /* Debug */,
+				A3F32CA1211A436F00D43E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F32CA2211A436F00D43E4D /* Build configuration list for PBXNativeTarget "SteakFlipperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F32CA3211A436F00D43E4D /* Debug */,
+				A3F32CA4211A436F00D43E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3F32C6C211A436C00D43E4D /* Project object */;
+}
