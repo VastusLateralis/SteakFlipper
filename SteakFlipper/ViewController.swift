@@ -41,7 +41,7 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     
     @objc func updateCounter() {
         CountDownLabel.text = String(CountDown)
-        CookTimeLabel.text = "Totaltime= \(CookTime)"
+        CookTimeLabel.text = myClockString(CookTime)
         FlipCounterLabel.text = "Flip count= \(FlipCounter)"
         
         CountDown -=  1
@@ -52,7 +52,29 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
             CountDown = 15
         }
         
+    }
+    
+    
+    func myClockString(_ sender: Int) -> String  {
         
+        var output : String
+
+        var tt: Int = 0
+        var mm: Int = 0
+        var ss: Int = 0
+        
+
+        
+        mm = Int(sender/60)
+        ss = sender - mm*60
+        
+        tt = 0
+            
+
+        
+        output = "\(tt) : \(mm) : \(ss)"
+
+      return output
     }
 
     
