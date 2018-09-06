@@ -5,6 +5,10 @@
 //  Created by Thomas Johannessen on 07/08/2018.
 //  Copyright © 2018 Thomas Johannessen. All rights reserved.
 //
+// Lage 00:00:00 klokke
+// Spille lyd når det skal snus
+// Stoppe nedtellingen i 3 sekunder når det snus
+
 
 import UIKit
 
@@ -17,6 +21,7 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     
     //MARK: VARIABLES
   
+    @IBOutlet weak var StartPauseButton: UIButton!
     @IBOutlet weak var AppHeading: UILabel!
     @IBOutlet weak var CookTimeLabel: UILabel!
     @IBOutlet weak var FlipCounterLabel: UILabel!
@@ -26,7 +31,7 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     var CookTime = 0                // Total steketid
     var FlipCounter = 0             // Antall "flips"
     var FlipTime = 3                // Stopp i 3 sekunder mens biffen snus
-    var ActiveTimer = false         // Skal klokken gå eller stoppe
+    var TimerRunning = false         // Skal klokken gå eller stoppe
     
     var SwiftTimer = Timer()
     var SwiftTimerPause = Timer()
@@ -36,42 +41,31 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     
     @objc func updateCounter() {
         CountDownLabel.text = String(CountDown)
-        CookTimeLabel.text = "Steketid \(CookTime)"
-        FlipCounterLabel.text = "Antall flips \(FlipCounter)"
+        CookTimeLabel.text = "Totaltime= \(CookTime)"
+        FlipCounterLabel.text = "Flip count= \(FlipCounter)"
         
         CountDown -=  1
         CookTime += 1
         
         if CountDown < 0 {  // har telt ned 15 sekunder
             FlipCounter += 1
-            // vent 3 sekunder på selve flippen
-            //SwiftTimer.invalidate()
-            //SwiftTimerPause = Timer.scheduledTimer(timeInterval: 1, target:self, selector: #selector(ViewController.updateCounter), userInfo: nil, repeats: true)
-            
-            
             CountDown = 15
-            
-            
-            
-            // Her kommer FlipTime pause = 3 sekunder
         }
         
         
     }
 
     
-    @IBAction func biff_StartButton(_ sender: Any) {
+    @IBAction func StartStoppButton(_ sender: Any) {
         
-        if ActiveTimer == false {
-            ActiveTimer = true
-            SwiftTimer = Timer.scheduledTimer(timeInterval: 1, target:self, selector: #selector(ViewController.updateCounter), userInfo: nil, repeats: true)
-        }
-            
-        else {
-            if CookTime > 0 {
-                SwiftTimer.invalidate()
-                ActiveTimer = false
-            }
+        if TimerRunning  {
+            SwiftTimer.invalidate() // Stopp klokken
+            TimerRunning = false
+            StartPauseButton.setTitle("Paused", for: .normal)
+        } else {
+            SwiftTimer = Timer.scheduledTimer(timeInterval: 1, target:self, selector:  #selector(ViewController.updateCounter), userInfo: nil, repeats: true) // Start klokken
+            TimerRunning = true
+            StartPauseButton.setTitle("Cooking", for: .normal)
             
         }
         
@@ -85,8 +79,9 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     
 //MARK: App Exit
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 
 
