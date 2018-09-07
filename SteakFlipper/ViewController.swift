@@ -28,10 +28,10 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     @IBOutlet weak var CountDownLabel: UILabel!
     
     var CountDown = 15              // Nedtelling 15 sekunder
-    var CookTime = 0                // Total steketid
+    var CookTime = 0             // Total steketid
     var FlipCounter = 0             // Antall "flips"
     var FlipTime = 3                // Stopp i 3 sekunder mens biffen snus
-    var TimerRunning = false         // Skal klokken gå eller stoppe
+    var TimerRunning = false        // Skal klokken gå eller stoppe
     
     var SwiftTimer = Timer()
     var SwiftTimerPause = Timer()
@@ -42,7 +42,7 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     @objc func updateCounter() {
         CountDownLabel.text = String(CountDown)
         CookTimeLabel.text = myClockString(CookTime)
-        FlipCounterLabel.text = "Flip count= \(FlipCounter)"
+        FlipCounterLabel.text = " \(FlipCounter) Flips"
         
         CountDown -=  1
         CookTime += 1
@@ -63,16 +63,20 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
         var mm: Int = 0
         var ss: Int = 0
         
+        var ss_string : String
+        var mm_string : String
+        var tt_string : String
+        
+        
+        tt = Int (sender/3600)
+        mm = Int (sender/60) - tt*60
+        ss = Int (sender - tt*3600 - mm*60)
+        
+        if tt < 10 { tt_string = "0"} else {tt_string = ""}
+        if mm < 10 { mm_string = "0"} else {mm_string = ""}
+        if ss < 10 { ss_string = "0"} else {ss_string = ""}
 
-        
-        mm = Int(sender/60)
-        ss = sender - mm*60
-        
-        tt = 0
-            
-
-        
-        output = "\(tt) : \(mm) : \(ss)"
+        output = "\(tt_string)\(tt) : \(mm_string)\(mm) : \(ss_string)\(ss)"
 
       return output
     }
