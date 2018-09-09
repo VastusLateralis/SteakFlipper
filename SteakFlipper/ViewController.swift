@@ -36,8 +36,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var FlipCounterLabel: UILabel!
     @IBOutlet weak var CountDownLabel: UILabel!
     
-    let StekeIntervall = 15
-    let FlipTime = 3
     
     var CountDown = 0              // Nedtelling 15 sekunder
     var CookTime = 0                // Total steketid
@@ -53,14 +51,14 @@ class ViewController: UIViewController {
     
     @objc func updateCounter() {
         
-        if CountDown < 3 {
+        if CountDown < 0 {
             CountDownLabel.font = CountDownLabel.font.withSize(120)
             CountDownLabel.text = "Flip!"
             if CountDown == 2 {playMyAudio()}
 
         } else {
             CountDownLabel.font = CountDownLabel.font.withSize(220)
-            CountDownLabel.text = String(CountDown-FlipTime)
+            CountDownLabel.text = String(CountDown)
         }
         
         CookTimeLabel.text = myClockString(CookTime)
@@ -69,11 +67,10 @@ class ViewController: UIViewController {
         CountDown -=  1
         CookTime += 1
         
-        if CountDown < 0 {  // har telt ned 15 sekunder
-            
+        if CountDown < -3 {  // har telt ned 15 sekunder
             
             FlipCounter += 1
-            CountDown = StekeIntervall + FlipTime
+            CountDown = 15
             
         }
     }
@@ -125,7 +122,7 @@ class ViewController: UIViewController {
             SwiftTimer = Timer.scheduledTimer(timeInterval: 1, target:self, selector:  #selector(ViewController.updateCounter), userInfo: nil, repeats: true) // Start klokken
             TimerRunning = true
             StartPauseButton.setTitle("Cooking", for: .normal)
-            CountDown = StekeIntervall + FlipTime
+            CountDown = 15
             
         }
         
