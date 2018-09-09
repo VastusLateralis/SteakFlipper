@@ -47,23 +47,6 @@ class ViewController: UIViewController {
 
     var player = AVPlayer()
     
-    
-    @IBAction func localPress(_ sender: Any) {
-
-    }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     //MARK: Functions
     
     @objc func updateCounter() {
@@ -74,6 +57,10 @@ class ViewController: UIViewController {
         CountDown -=  1
         CookTime += 1
         
+        if CountDown == 3 {
+            playMyAudio()
+        }
+        
         if CountDown < 0 {  // har telt ned 15 sekunder
             FlipCounter += 1
             CountDown = 15
@@ -81,6 +68,17 @@ class ViewController: UIViewController {
         
     }
     
+    
+    func playMyAudio () {
+        let path = Bundle.main.resourcePath!+"/Ding.mp3"
+        print(path)
+        let url = URL(fileURLWithPath: path)
+        
+        let playerItem = AVPlayerItem(url: url)
+        player = AVPlayer(playerItem: playerItem)
+        player.play()
+        
+    }
     
     func myClockString(_ sender: Int) -> String  {
         
@@ -110,14 +108,6 @@ class ViewController: UIViewController {
 
     
     @IBAction func StartStoppButton(_ sender: Any) {
-        
-        let path = Bundle.main.resourcePath!+"/Ding.mp3"
-        print(path)
-        let url = URL(fileURLWithPath: path)
-        
-        let playerItem = AVPlayerItem(url: url)
-        player = AVPlayer(playerItem: playerItem)
-        player.play()
         
         if TimerRunning  {
             SwiftTimer.invalidate() // Stopp klokken
