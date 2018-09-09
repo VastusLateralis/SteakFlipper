@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var CountDownLabel: UILabel!
     
     var CountDown = 15              // Nedtelling 15 sekunder
-    var CookTime = 0             // Total steketid
+    var CookTime = 0                // Total steketid
     var FlipCounter = 0             // Antall "flips"
     var FlipTime = 3                // Stopp i 3 sekunder mens biffen snus
     var TimerRunning = false        // Skal klokken gå eller stoppe
@@ -50,22 +50,28 @@ class ViewController: UIViewController {
     //MARK: Functions
     
     @objc func updateCounter() {
-        CountDownLabel.text = String(CountDown)
+        
+        if CountDown < 3 {
+            CountDownLabel.font = CountDownLabel.font.withSize(120)
+            CountDownLabel.text = "Flip!"
+            if CountDown == 2 {playMyAudio()}
+            
+        } else {
+            CountDownLabel.font = CountDownLabel.font.withSize(220)
+            CountDownLabel.text = String(CountDown)
+        }
+        
         CookTimeLabel.text = myClockString(CookTime)
         FlipCounterLabel.text = " \(FlipCounter) Flips"
         
         CountDown -=  1
         CookTime += 1
         
-        if CountDown == 3 {
-            playMyAudio()
-        }
-        
         if CountDown < 0 {  // har telt ned 15 sekunder
             FlipCounter += 1
             CountDown = 15
+            
         }
-        
     }
     
     
@@ -76,8 +82,7 @@ class ViewController: UIViewController {
         
         let playerItem = AVPlayerItem(url: url)
         player = AVPlayer(playerItem: playerItem)
-        player.play()
-        
+        player.play()        
     }
     
     func myClockString(_ sender: Int) -> String  {
@@ -106,14 +111,13 @@ class ViewController: UIViewController {
       return output
     }
 
-    
     @IBAction func StartStoppButton(_ sender: Any) {
         
         if TimerRunning  {
             SwiftTimer.invalidate() // Stopp klokken
             TimerRunning = false
             StartPauseButton.setTitle("Paused", for: .normal)
-        } else {
+        } else {                    // Start klokken
             SwiftTimer = Timer.scheduledTimer(timeInterval: 1, target:self, selector:  #selector(ViewController.updateCounter), userInfo: nil, repeats: true) // Start klokken
             TimerRunning = true
             StartPauseButton.setTitle("Cooking", for: .normal)
@@ -122,18 +126,11 @@ class ViewController: UIViewController {
         
     }
     
-    
-    @IBAction func biff_Avslutt(_ sender: Any) {
-        
-    }
-    
-    
-//MARK: App Exit
-    override func didReceiveMemoryWarning() {
-        
-        super.didReceiveMemoryWarning()
 
-    }
+    
+    
+    //MARK: App Exit
+    override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
 
 
 }
