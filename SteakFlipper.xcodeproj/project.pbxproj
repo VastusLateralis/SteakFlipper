@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31914BD2145591B000697F8 /* Ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A31914BC2145591B000697F8 /* Ding.mp3 */; };
 		A395A502211A45340071F818 /* Prosjektbeskrivelse.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A395A501211A45340071F818 /* Prosjektbeskrivelse.rtf */; };
 		A3F32C78211A436C00D43E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C77211A436C00D43E4D /* AppDelegate.swift */; };
 		A3F32C7A211A436C00D43E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F32C79211A436C00D43E4D /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A31914BC2145591B000697F8 /* Ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ding.mp3; sourceTree = "<group>"; };
 		A395A501211A45340071F818 /* Prosjektbeskrivelse.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Prosjektbeskrivelse.rtf; sourceTree = "<group>"; };
 		A3F32C74211A436C00D43E4D /* SteakFlipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteakFlipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F32C77211A436C00D43E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				A3F32C77211A436C00D43E4D /* AppDelegate.swift */,
 				A3F32C79211A436C00D43E4D /* ViewController.swift */,
+				A31914BC2145591B000697F8 /* Ding.mp3 */,
 				A3F32C7B211A436C00D43E4D /* Main.storyboard */,
 				A3F32C7E211A436F00D43E4D /* Assets.xcassets */,
 				A3F32C80211A436F00D43E4D /* LaunchScreen.storyboard */,
@@ -237,6 +240,7 @@
 			files = (
 				A3F32C82211A436F00D43E4D /* LaunchScreen.storyboard in Resources */,
 				A3F32C7F211A436F00D43E4D /* Assets.xcassets in Resources */,
+				A31914BD2145591B000697F8 /* Ding.mp3 in Resources */,
 				A395A502211A45340071F818 /* Prosjektbeskrivelse.rtf in Resources */,
 				A3F32C7D211A436C00D43E4D /* Main.storyboard in Resources */,
 			);

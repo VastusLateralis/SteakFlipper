@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +22,7 @@
                                 <rect key="frame" x="30" y="117" width="319" height="96"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="ZSH-yJ-jRU"/>
+                                    <constraint firstAttribute="height" constant="96" id="gdR-BE-t1w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="59"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,10 +31,10 @@
                                     <action selector="StartStoppButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGb-41-MsA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ts-3Q-cw1" userLabel="Saken er biff!  En app som hjelper deg steke som Heston">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ts-3Q-cw1" userLabel="Saken er biff!  En app som hjelper deg steke som Heston">
                                 <rect key="frame" x="30" y="39" width="319" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="33y-sk-Ezo"/>
+                                    <constraint firstAttribute="height" constant="70" id="ujD-7F-urI"/>
                                 </constraints>
                                 <string key="text">Saken er biff! 
 Appen hjelper deg steke som Heston</string>
@@ -44,16 +43,16 @@ Appen hjelper deg steke som Heston</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1g-Vd-ixi">
-                                <rect key="frame" x="30" y="221" width="320" height="50"/>
+                                <rect key="frame" x="30" y="221" width="319" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="clg-br-bnw"/>
+                                    <constraint firstAttribute="height" constant="50" id="I18-x0-8QF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqW-oR-l7o">
-                                <rect key="frame" x="30" y="278" width="320" height="50"/>
+                                <rect key="frame" x="30" y="278" width="319" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ePR-Gf-dns"/>
@@ -62,8 +61,8 @@ Appen hjelper deg steke som Heston</string>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-kh-pPD">
-                                <rect key="frame" x="30" y="336" width="320" height="320"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-kh-pPD">
+                                <rect key="frame" x="30" y="336" width="319" height="320"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="220"/>
@@ -74,20 +73,22 @@ Appen hjelper deg steke som Heston</string>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ift-kh-pPD" secondAttribute="bottom" constant="11" id="2qy-Tj-Dck"/>
-                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="top" secondItem="pri-hc-uRc" secondAttribute="bottom" constant="8" symbolic="YES" id="37X-4S-Sat"/>
-                            <constraint firstItem="pri-hc-uRc" firstAttribute="leading" secondItem="O1g-Vd-ixi" secondAttribute="leading" id="5zq-tL-jGE"/>
-                            <constraint firstItem="5ts-3Q-cw1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="6fq-O8-PgM"/>
-                            <constraint firstItem="pri-hc-uRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="6oS-Vd-RZe"/>
-                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="leading" secondItem="JqW-oR-l7o" secondAttribute="leading" id="C1F-da-pV0"/>
-                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="trailing" secondItem="JqW-oR-l7o" secondAttribute="trailing" id="FL2-6G-CwI"/>
+                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="leading" secondItem="JqW-oR-l7o" secondAttribute="leading" id="7Gf-uN-UYd"/>
+                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="trailing" secondItem="JqW-oR-l7o" secondAttribute="trailing" id="7H9-cz-kvZ"/>
+                            <constraint firstItem="JqW-oR-l7o" firstAttribute="top" secondItem="O1g-Vd-ixi" secondAttribute="bottom" constant="7" id="8Sl-bc-8rN"/>
+                            <constraint firstItem="pri-hc-uRc" firstAttribute="leading" secondItem="5ts-3Q-cw1" secondAttribute="leading" id="Dcy-sB-tms"/>
+                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="top" secondItem="pri-hc-uRc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ohz-hz-evd"/>
                             <constraint firstItem="Ift-kh-pPD" firstAttribute="top" secondItem="JqW-oR-l7o" secondAttribute="bottom" constant="8" symbolic="YES" id="Sz7-4x-1ZD"/>
-                            <constraint firstItem="pri-hc-uRc" firstAttribute="centerX" secondItem="O1g-Vd-ixi" secondAttribute="centerX" id="fm7-Bw-z5e"/>
+                            <constraint firstItem="pri-hc-uRc" firstAttribute="top" secondItem="5ts-3Q-cw1" secondAttribute="bottom" constant="8" symbolic="YES" id="UXQ-i5-tqy"/>
+                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="leading" secondItem="pri-hc-uRc" secondAttribute="leading" id="Wwf-hw-QwY"/>
+                            <constraint firstItem="5ts-3Q-cw1" firstAttribute="centerX" secondItem="Ift-kh-pPD" secondAttribute="centerX" id="YGK-eG-NSO"/>
+                            <constraint firstItem="5ts-3Q-cw1" firstAttribute="centerX" secondItem="JqW-oR-l7o" secondAttribute="centerX" id="dqL-tu-epg"/>
+                            <constraint firstItem="pri-hc-uRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="fJp-1f-PUK"/>
                             <constraint firstItem="JqW-oR-l7o" firstAttribute="trailing" secondItem="Ift-kh-pPD" secondAttribute="trailing" id="h0l-XY-Yb0"/>
-                            <constraint firstItem="5ts-3Q-cw1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mdu-nV-WaO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1g-Vd-ixi" secondAttribute="trailing" constant="25" id="nIL-Zs-MQC"/>
-                            <constraint firstItem="JqW-oR-l7o" firstAttribute="top" secondItem="O1g-Vd-ixi" secondAttribute="bottom" constant="7" id="nNr-2E-Jpx"/>
-                            <constraint firstItem="pri-hc-uRc" firstAttribute="top" secondItem="5ts-3Q-cw1" secondAttribute="bottom" constant="8" symbolic="YES" id="sE8-rI-8gG"/>
+                            <constraint firstItem="O1g-Vd-ixi" firstAttribute="trailing" secondItem="pri-hc-uRc" secondAttribute="trailing" id="iR3-zb-Wqe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ts-3Q-cw1" secondAttribute="trailing" constant="26" id="yHf-Jr-NFC"/>
                             <constraint firstItem="JqW-oR-l7o" firstAttribute="leading" secondItem="Ift-kh-pPD" secondAttribute="leading" id="yu6-lp-alC"/>
+                            <constraint firstItem="5ts-3Q-cw1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="zeE-Y1-Wcp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -10,14 +10,23 @@
 // Stoppe nedtellingen i 3 sekunder når det snus
 
 
-import UIKit
-
 //MARK: App Init
-class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() }
-    
-    
-    
-    
+
+import UIKit
+import AVKit
+import AVFoundation
+
+extension ViewController {
+    //manage rotation for this viewcontroller
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+}
+
+class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        }
     
     //MARK: VARIABLES
   
@@ -35,6 +44,24 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
     
     var SwiftTimer = Timer()
     var SwiftTimerPause = Timer()
+
+    var player = AVPlayer()
+    
+    
+    @IBAction func localPress(_ sender: Any) {
+
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     //MARK: Functions
@@ -83,6 +110,14 @@ class ViewController: UIViewController { override func viewDidLoad() { super.vie
 
     
     @IBAction func StartStoppButton(_ sender: Any) {
+        
+        let path = Bundle.main.resourcePath!+"/Ding.mp3"
+        print(path)
+        let url = URL(fileURLWithPath: path)
+        
+        let playerItem = AVPlayerItem(url: url)
+        player = AVPlayer(playerItem: playerItem)
+        player.play()
         
         if TimerRunning  {
             SwiftTimer.invalidate() // Stopp klokken
